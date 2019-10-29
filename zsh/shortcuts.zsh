@@ -17,7 +17,7 @@ zz() {
 }
 
 alias g=git
-alias v=vim
-alias vi=vim
 alias a='zz "atom -a ."'
 alias o='zz open'
+alias p='python3'
+alias ll='ls -al'
