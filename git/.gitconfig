@@ -1,0 +1,28 @@
+[user]
+  name  = Clement Joudet
+  email = clement.joudet
+[core]
+  editor = vim
+  excludesfile = ~/.gitexcludes
+[push]
+  default = current
+[pull]
+  default = current
+[alias]
+  st = status
+  lg = log -M --decorate --graph --oneline
+  c = commit -m
+  co = checkout
+  br = branch
+  cp = cherry-pick
+  pur = pull --rebase
+  pr = !git push -u && hub pull-request
+  oops = !git add -p && git commit --amend && git push --force
+  force = !git commit --amend --no-edit && git push --force
+  wip = !git commit --all -m "[WIP]"
+  bc = !git fetch -p && git branch -D $(git branch --merged) && git branch -a
+  dirty = !git status --porcelain | sed -ne 's/^.[^ ] //p'
+[url "https://"]
+  insteadOf = git://
+[merge]
+  tool = vimdiff
