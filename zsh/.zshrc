@@ -3,5 +3,5 @@ source ~/.zsh/prompt.zsh
 source ~/.zsh/autosuggest.zsh
 source /usr/local/etc/profile.d/z.sh
 
-source ~/.config.zsh
-source ~/.shortcuts.zsh
+source ~/.zsh/config.zsh
+source ~/.zsh/shortcuts.zsh
