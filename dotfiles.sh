@@ -7,7 +7,8 @@ which brew &>/dev/null || {
 }
 
 echo "Brew packages"
-brew install z
+brew install z zsh-syntax-highlighting
+brew cask install iterm2 atom
 
 echo "Downloading dotfiles"
 git clone https://github.com/clemkoa/dotfiles.git ~/.dotfiles

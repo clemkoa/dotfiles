@@ -1,3 +1,8 @@
+silent() {
+  eval "$@" >/dev/null 2>&1
+  return $?
+}
+
 # zz cmd [arguments]
 # If the first argument is an existing file
 # Then execute "cmd arguments"
