@@ -1,3 +1,14 @@
+log() { echo "\033[32m$@\033[0m"; }
+
+which brew &>/dev/null || {
+  log "Install Package Manager"
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  xcode-select --install
+}
+
+echo "Brew packages"
+brew install z
+
 echo "Downloading dotfiles"
 git clone https://github.com/clemkoa/dotfiles.git ~/.dotfiles
 
@@ -16,3 +27,4 @@ read -e -p "Git email: ($EMAIL) " EMAIL
 git config --global user.email $EMAIL
 
 echo "All done - Enjoy"
+zsh
