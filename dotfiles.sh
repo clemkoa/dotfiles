@@ -7,7 +7,7 @@ which brew &>/dev/null || {
 }
 
 echo "Brew packages"
-brew install z zsh-syntax-highlighting
+brew install z zsh-syntax-highlighting zsh-history-substring-search
 brew cask install iterm2 atom
 
 echo "Downloading dotfiles"
