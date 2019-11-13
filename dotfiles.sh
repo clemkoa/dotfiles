@@ -19,6 +19,7 @@ ln -sf ~/.dotfiles/git/.gitexcludes ~/.gitexcludes
 ln -sf ~/.dotfiles/git/.githooks ~/.githooks
 ln -sfn ~/.dotfiles/zsh ~/.zsh
 ln -sf ~/.dotfiles/zsh/.zshrc ~/.zshrc
+ln -sf ~/.dotfiles/vim/.vimrc ~/.vimrc
 
 echo "Updating gitconfig"
 NAME=$(git config --global user.name)
