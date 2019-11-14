@@ -1,6 +1,7 @@
 syntax on
 
 set scrolloff=5
+set nowrap
 set showmode
 set showcmd
 set number
