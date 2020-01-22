@@ -7,8 +7,8 @@ which brew &>/dev/null || {
 }
 
 echo "Brew packages"
-brew install z zsh-syntax-highlighting zsh-history-substring-search
-brew cask install iterm2 atom
+brew install z zsh-syntax-highlighting zsh-history-substring-search diff-so-fancy
+brew cask install iterm2 atom firefox
 
 echo "Downloading dotfiles"
 git clone https://github.com/clemkoa/dotfiles.git ~/.dotfiles
@@ -28,6 +28,12 @@ git config --global user.name $NAME
 EMAIL=$(git config --global user.email)
 read -e -p "Git email: ($EMAIL) " EMAIL
 git config --global user.email $EMAIL
+
+defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain KeyRepeat -int 1
 
 echo "All done - Enjoy"
 zsh
