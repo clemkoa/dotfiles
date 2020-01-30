@@ -29,7 +29,9 @@ EMAIL=$(git config --global user.email)
 read -e -p "Git email: ($EMAIL) " EMAIL
 git config --global user.email $EMAIL
 
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock show-recents -bool false
 defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
 defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write com.apple.LaunchServices LSQuarantine -bool false
