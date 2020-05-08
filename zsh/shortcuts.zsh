@@ -26,3 +26,5 @@ alias a='zz "atom -a ."'
 alias o='zz open'
 alias p='python3'
 alias ll='ls -al'
+alias python=/usr/local/bin/python3
+alias pip=/usr/local/bin/pip3
