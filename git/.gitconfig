@@ -16,7 +16,6 @@
 [core]
   editor = vim
   excludesfile = ~/.gitexcludes
-  hooksPath = ~/.githooks
   symlink = true
 [fetch]
   prune = true
