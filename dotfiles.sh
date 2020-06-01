@@ -16,7 +16,6 @@ git clone https://github.com/clemkoa/dotfiles.git ~/.dotfiles
 echo "Creating symlinks"
 ln -sf ~/.dotfiles/git/.gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/git/.gitexcludes ~/.gitexcludes
-ln -sf ~/.dotfiles/git/.githooks ~/.githooks
 ln -sfn ~/.dotfiles/zsh ~/.zsh
 ln -sf ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ln -sf ~/.dotfiles/vim/.vimrc ~/.vimrc
