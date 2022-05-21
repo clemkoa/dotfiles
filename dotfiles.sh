@@ -8,7 +8,8 @@ which brew &>/dev/null || {
 
 echo "Brew packages"
 brew install z zsh-syntax-highlighting zsh-history-substring-search diff-so-fancy
-brew cask install iterm2 atom firefox
+brew cask install iterm2 firefox
+brew install pyenv nvm
 
 echo "Downloading dotfiles"
 git clone https://github.com/clemkoa/dotfiles.git ~/.dotfiles
