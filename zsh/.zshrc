@@ -1,14 +1,17 @@
 source ~/.zsh/async.zsh
 source ~/.zsh/prompt.zsh
 source ~/.zsh/autosuggest.zsh
-source /usr/local/etc/profile.d/z.sh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /opt/homebrew/etc/profile.d/z.sh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 source ~/.zsh/config.zsh
 source ~/.zsh/shortcuts.zsh
+
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
