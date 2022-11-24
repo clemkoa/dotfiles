@@ -2,7 +2,7 @@ log() { echo "\033[32m$@\033[0m"; }
 
 which brew &>/dev/null || {
   log "Install Package Manager"
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   xcode-select --install
 }
 
@@ -38,6 +38,7 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write com.apple.notes NSAutomaticSpellingCorrectionEnabled -bool false
 
 echo "All done - Enjoy"
 zsh
