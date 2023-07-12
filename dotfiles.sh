@@ -7,9 +7,12 @@ which brew &>/dev/null || {
 }
 
 echo "Brew packages"
+echo "Installing command line utilities..."
 brew install z zsh-syntax-highlighting zsh-history-substring-search diff-so-fancy
-brew cask iterm2 firefox visual-studio-code google-chrome slack --cask
-brew install pyenv nvm
+echo "Installing programming languages..."
+brew install pyenv nvm ruby
+echo "Installing applications..."
+brew install iterm2 firefox visual-studio-code google-chrome slack miniconda --cask
 
 echo "Downloading dotfiles"
 git clone https://github.com/clemkoa/dotfiles.git ~/.dotfiles
